@@ -1,0 +1,69 @@
+{
+  "menu": [
+    {
+      "category": "飯類",
+      "items": [
+        {
+          "name": "火腿蛋炒飯",
+          "price": 60,
+          "iamges": "https://image.freepik.com/free-photo/fried-rice_1232-1918.jpg"
+        },
+        {
+          "name": "牛肉燴飯",
+          "price": 80,
+          "iamges": "https://image.freepik.com/free-photo/cantonese-style-rice-with-beef_1205-9232.jpg"
+        },
+        {
+          "name": "咖哩雞飯",
+          "price": 50,
+          "iamges": "https://image.freepik.com/free-photo/fried-pork-cutlet-curry-with-rice-dark-surface_1150-41997.jpg"
+        },
+        {
+          "name": "白飯",
+          "price": 20,
+          "iamges": "https://image.freepik.com/free-photo/rice-bowl_1387-181.jpg"
+        }
+      ]
+    },
+    {
+      "category": "湯類",
+      "items": [
+        {
+          "name": "香菇雞湯",
+          "price": 100,
+          "iamges": "https://image.freepik.com/free-photo/bowl-mushroom-lao-duck-soup-cutting-board_1205-8297.jpg"
+        },
+        {
+          "name": "蘿蔔肉丸湯",
+          "price": 80,
+          "iamges": "https://image.freepik.com/free-photo/pork-ball-soup-cup-blue-white-cloth_1150-23834.jpg"
+        },
+        {
+          "name": "貢丸湯",
+          "price": 50,
+          "iamges": "https://image.freepik.com/free-photo/rice-boiled-with-pork_1388-116.jpg"
+        },
+        {
+          "name": "青菜湯",
+          "price": 50,
+          "iamges": "https://image.freepik.com/free-photo/top-view-girl-with-red-nails-eating-miso-soup_181624-28583.jpg"
+        }
+      ]
+    },
+    {
+      "category": "小滷味",
+      "items": [
+        {
+          "name": "魯盤",
+          "price": 80,
+          "iamges": "https://image.freepik.com/free-photo/quail-eggs-stew-with-belly-pork-chinese-food_1205-10195.jpg"
+        },
+        {
+          "name": "滷雞腿",
+          "price": 80,
+          "iamges": "https://image.freepik.com/free-photo/fowl-stewed-with-soy-sauce-chicken-thigh_1205-7699.jpg"
+        }
+      ]
+    }
+  ]
+}
