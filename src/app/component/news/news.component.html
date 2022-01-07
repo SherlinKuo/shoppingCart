@@ -1,0 +1,47 @@
+<div style="overflow-y: auto;">
+    <div style="padding: 5px; " fxLayoutGap="15px" fxLayout="column">
+  
+      <h1>{{title}}</h1>
+  
+      <!-- 一般 object 使用 -->
+      <!-- <div style="border: 3px dashed rgb(11, 22, 85);">
+        <h2>{{newinfo.category}}</h2>
+        <h3>{{newinfo.title}}</h3>
+        <h4>{{newinfo.content}}</h4>
+      </div> -->
+  
+  
+      <!-- 多筆資料 (陣列) ngif -->
+      <div fxLayoutGap="15px" fxLayout="column" >
+        <div *ngFor="let new of newsinfo">
+          <div *ngIf="new.category != '疫情'" class="news" >
+            <h2><b>{{new.category}}</b></h2>
+            <h3>{{new.title}}</h3>
+            <h4>{{new.content}}</h4>
+          </div>
+          <div *ngIf="new.category == '疫情'" class="special_new" >
+            <h2><b>{{new.category}}</b></h2>
+            <h3>{{new.title}}</h3>
+            <h4>{{new.content}}</h4>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 多筆資料 (陣列) ngclass-->
+      <div fxLayoutGap="15px" fxLayout="column" >
+        <div *ngFor="let new of newsinfo">
+          <div [ngClass]="{'news':new.category != '疫情', 'special_new': new.category == '疫情'}" >
+            <h2><b>{{new.category}}</b></h2>
+            <h3>{{new.title}}</h3>
+            <h4>{{new.content}}</h4>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div *ngIf="flag">
+      <h1> 我在這裡~ </h1>
+    </div>
+  </div>
+  

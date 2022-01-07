@@ -1,0 +1,12 @@
+
+<div *ngFor="let menu of menuData">
+    
+    <li>{{menu.category}}</li>
+    <div *ngFor="let item of menu.items">
+        {{item.name}}
+        <img [src]="item.images">
+    </div>
+    
+
+
+</div>
