@@ -1,5 +1,11 @@
 
- 
+h1{
+    text-align: center;
+    font-size: 55px;  
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+}
 
 h2{
     font-family: DFKai-SB, "Microsoft JhengHei"; 
@@ -14,15 +20,14 @@ h3{
 .news{
     border: 2px dashed rgb(11, 22, 85);
     padding: 10px;
-    
-
+    background-color: rgba(255, 255, 255, 0.877);
 }
 
 .special_new{
 
     border: 2px dashed rgb(11, 22, 85);
     padding: 10px;
-    background-color: #1477da4f;
+    background-color: #4e8eced2;
     
 }
 
@@ -51,6 +56,30 @@ div.special_new:hover,div.news:hover{
     to {
     left: 0px;
     }
+}
+
+
+
+
+.home{
+    background-color: rgb(236, 236, 236);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.context{
+    // background-color: white;
+    background-image: url("../../../assets/images/mountain.jpg");
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.637) 0px 3px 8px;
+    padding: 40px;
+
 }
 
 

@@ -1,79 +1,86 @@
-<h1>預約系統</h1>
-<div class="dataForm" >
-    <ul>
-        <li>
-            <mat-icon>account_circle</mat-icon> 姓名 ： <input type="text" [(ngModel)]="profile.name" class="nameInput"/>
-        </li>
 
-        <!-- input type="radio" 用法 -->
-        <!-- <li>性別：
-            <input type="radio" value="1" name="sex" id="sex1" [(ngModel)]="profile.sex"> <label for="sex1"> 男 </label>
-            <input type="radio" value="2" name="sex" id="sex2" [(ngModel)]="profile.sex"> <label for="sex2"> 女 </label>
-        </li> -->
-
-        <li>
-            <mat-icon>wc</mat-icon>性別 ：
-            <mat-radio-group [(ngModel)]="profile.gender" >
-                <mat-radio-button value="1"> 男 </mat-radio-button>
-                <mat-radio-button value="2"> 女 </mat-radio-button>
-              </mat-radio-group>
-        </li>
-
-        <!-- select 用法 -->
-        <!-- <li>
-            職業 ：
-            <select [(ngModel)]="profile.job">
-                <option disabled selected hidden value="">select job</option>
-                <option [value]="item" *ngFor="let item of jobList">{{item}}</option>
-            </select>
-        </li> -->
-        
-        <li>
-            <mat-icon>work</mat-icon>職業 ：
-            <mat-form-field>
-                <mat-label>select job</mat-label>
-                <mat-select [(ngModel)]="profile.job"> 
-                    <mat-option [value]="item" *ngFor="let item of jobList">{{item}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </li>
-
-        <!-- input type="checkbox" 用法-->
-        <!-- <li>
-            感興趣的語言：
-            <span *ngFor="let item of profile.programLang; let key=index;">
-                <input type="checkbox" [(ngModel)]="item.checked" [id]="'check' + key">
-                <label [for]="'check' + key">{{item.lang}}</label>
-            </span>
-        </li> -->
-
-        <li>
-            <mat-icon>local_library</mat-icon>感興趣的語言：
-            <span *ngFor="let item of profile.programLang">
-                <mat-checkbox [(ngModel)]="item.checked">{{item.lang}}</mat-checkbox>
-            </span>
-        </li>
+<div class="home">
+    
 
 
-        <!-- textarea  用法-->
-        <!-- <li>
-            想學習的語言或建議：
-            <textarea rows=5 cols=22 [(ngModel)]="profile.message" style="resize:none;" placeholder="請提供您的寶貴意見"></textarea>
-        </li> -->
+    <div class="dataForm" >
+        <h1>預約系統</h1>
+        <ul>
+            <li>
+                <mat-icon>account_circle</mat-icon> 姓名 ： <input type="text" [(ngModel)]="profile.name" class="nameInput"/>
+            </li>
 
-        <li>
-            <mat-form-field>
-                <mat-label><mat-icon>textsms</mat-icon>想學習的語言或建議：</mat-label>
-                <textarea matInput placeholder="請提供您的寶貴意見" [(ngModel)]="profile.message"  matTextareaAutosize></textarea>
-            </mat-form-field>
-        </li>
+            <!-- input type="radio" 用法 -->
+            <!-- <li>性別：
+                <input type="radio" value="1" name="sex" id="sex1" [(ngModel)]="profile.sex"> <label for="sex1"> 男 </label>
+                <input type="radio" value="2" name="sex" id="sex2" [(ngModel)]="profile.sex"> <label for="sex2"> 女 </label>
+            </li> -->
 
-    </ul>
-    <br>
-    <button (click)="check()">以上輸入的姓名為</button>
-</div>
+            <li>
+                <mat-icon>wc</mat-icon>性別 ：
+                <mat-radio-group [(ngModel)]="profile.gender" >
+                    <mat-radio-button value="1"> 男 </mat-radio-button>
+                    <mat-radio-button value="2"> 女 </mat-radio-button>
+                </mat-radio-group>
+            </li>
 
-<div class="dataForm">
-    <h4>已收集到的資訊</h4>
-    <pre>{{profile | json}}</pre>
+            <!-- select 用法 -->
+            <!-- <li>
+                職業 ：
+                <select [(ngModel)]="profile.job">
+                    <option disabled selected hidden value="">select job</option>
+                    <option [value]="item" *ngFor="let item of jobList">{{item}}</option>
+                </select>
+            </li> -->
+            
+            <li>
+                <mat-icon>work</mat-icon>職業 ：
+                <mat-form-field>
+                    <mat-label>select job</mat-label>
+                    <mat-select [(ngModel)]="profile.job"> 
+                        <mat-option [value]="item" *ngFor="let item of jobList">{{item}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </li>
+
+            <!-- input type="checkbox" 用法-->
+            <!-- <li>
+                感興趣的語言：
+                <span *ngFor="let item of profile.programLang; let key=index;">
+                    <input type="checkbox" [(ngModel)]="item.checked" [id]="'check' + key">
+                    <label [for]="'check' + key">{{item.lang}}</label>
+                </span>
+            </li> -->
+
+            <li>
+                <mat-icon>local_library</mat-icon>感興趣的語言：
+                <span *ngFor="let item of profile.programLang">
+                    <mat-checkbox [(ngModel)]="item.checked">{{item.lang}}</mat-checkbox>
+                </span>
+            </li>
+
+
+            <!-- textarea  用法-->
+            <!-- <li>
+                想學習的語言或建議：
+                <textarea rows=5 cols=22 [(ngModel)]="profile.message" style="resize:none;" placeholder="請提供您的寶貴意見"></textarea>
+            </li> -->
+
+            <li>
+                <mat-form-field>
+                    <mat-label><mat-icon>textsms</mat-icon>想學習的語言或建議：</mat-label>
+                    <textarea matInput placeholder="請提供您的寶貴意見" [(ngModel)]="profile.message"  matTextareaAutosize></textarea>
+                </mat-form-field>
+            </li>
+
+        </ul>
+        <br>
+        <button (click)="check()">以上輸入的姓名為</button>
+    </div>
+
+    <div class="dataForm">
+        <h4>已收集到的資訊</h4>
+        <pre>{{profile | json}}</pre>
+    </div>
+
 </div>

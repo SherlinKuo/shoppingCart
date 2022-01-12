@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-news',
-  templateUrl: './news.component.html',
-  styleUrls: ['./news.component.scss']
+  selector: 'app-news', //元件名稱
+  templateUrl: './news.component.html', //元件的 HTML
+  styleUrls: ['./news.component.scss'] //元件的 SCSS
 })
-export class NewsComponent implements OnInit {
+export class NewsComponent implements OnInit { // NewsComponent 元件匯入名稱
 
 
   title:string = "每日新聞";
@@ -39,7 +39,7 @@ export class NewsComponent implements OnInit {
 
   flag: boolean = true;
 
-  constructor() { }
+  constructor() { } // 建構函式(初始化的內容都放在裡面)
 
   ngOnInit() {}
 

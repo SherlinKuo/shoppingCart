@@ -14,19 +14,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
-
-
-
+import { HeaderComponent } from './component/news/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     FormsComponent,
-    MenusComponent
+    MenusComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

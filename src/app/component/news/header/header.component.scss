@@ -1,0 +1,24 @@
+p{
+    font-family: DFKai-SB, "Microsoft JhengHei";
+    font-weight: 600;
+    width: fit-content;
+    padding: 2px;
+    margin: auto;
+    border: 10px solid rgb(226, 166, 216);
+    animation: borderAround 30s infinite;
+}
+
+@keyframes borderAround {
+    25% {border: 10px solid rgb(221, 180, 134);}
+    50% {border: 10px solid lightblue;}
+    75% {border: 10px solid rgb(152, 211, 137);}
+}
+
+
+.header{
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    position: relative;
+
+}
+

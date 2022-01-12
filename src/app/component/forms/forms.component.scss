@@ -1,16 +1,30 @@
+.home{
+    background-image: url("../../../assets/images/coffeeTime.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; //固定背景
+    padding-top: 20px;
 
+}
 
 h1{
+    margin: auto;
+    padding-top: 20px;
     text-align: center;
-    margin: 20px;
     font-weight: bold;
+
 }
 .dataForm{
+    background-color: rgba(255, 255, 255, 0.95);
     font-weight: bold;
     width: 70%;
     margin: 10px auto;
+    margin-top: 0px;
     padding: 20px;
     border: 1px solid rgb(224, 224, 224);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.637) 0px 3px 8px;
     .nameInput{
         width: 300px;
         height: 40px;
@@ -26,4 +40,9 @@ h1{
 mat-icon{
     vertical-align: middle;
     margin-right: 5px;
+}
+
+.header{
+    background-color: rgb(54, 119, 194);
+    padding: 10px;
 }
