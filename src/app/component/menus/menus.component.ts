@@ -11,8 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class MenusComponent implements OnInit {
 
   menuData: menuList[] = [];
+  menuUrl = "https://raw.githubusercontent.com/SherlinKuo/shoppingCart/main/menuList.json"
   constructor(private http: HttpClient) {
-    this.http.get<dataForm>("https://raw.githubusercontent.com/SherlinKuo/shoppingCart/main/menuList.json")
+    this.http.get<dataForm>(this.menuUrl)
       .subscribe(
       (data: dataForm) => {
         // console.log(data.menu);

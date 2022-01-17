@@ -1,12 +1,25 @@
-
-<div *ngFor="let menu of menuData">
-    
+<!-- 陽春版 -->
+<!-- <div *ngFor="let menu of menuData">
     <li>{{menu.category}}</li>
     <div *ngFor="let item of menu.items">
         {{item.name}}
         <img [src]="item.images">
     </div>
-    
-
-
+</div> -->
+<div class= "home" fxLayoutAlign="space-around start" fxLayout="row" fxLayoutGap="10px">
+    <mat-expansion-panel *ngFor="let menu of menuData">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{menu.category}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-card *ngFor="let item of menu.items">
+            <mat-card-title>
+                <span>{{item.name}}</span>
+                <span><mat-icon>sell</mat-icon>NT.{{item.price}}</span>
+            </mat-card-title>
+            <img [src]="item.images" >
+        </mat-card>
+    </mat-expansion-panel>
 </div>
+

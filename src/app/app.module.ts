@@ -17,6 +17,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './component/news/header/header.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { HeaderComponent } from './component/news/header/header.component';
     MatSelectModule,
     MatInputModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatExpansionModule
 
     
   ],
